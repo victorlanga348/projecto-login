@@ -24,9 +24,9 @@ body, html{
 }
 
 main{
+    position: relative;
     width: 100vw;
     height: 100vh;
-    position: relative;
 }
 
 a{
@@ -40,21 +40,22 @@ a{
 /* Id */
 
 section#login{
-    background-color: white;
-    width: 250px;
-    height: 600px;
-    border-radius: 20px;
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
+    background-color: white;
+    width: 250px;
+    height: 523px;
+    border-radius: 20px;
+
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
-    transition: width .3s, height .3s;
-    transition-timing-function: ease;
     /* Tudo que tiver fora da borda vai ficar escondido com essa tag: */
     overflow: hidden;
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 div#imagem{
@@ -79,14 +80,19 @@ div#formulario p{
     font-size: 0.8em;
 }
 
-div#user{
-    display: flex;
-    background-color: #5f2c82;
-    color: white;
+#iuser, #isenha{
+    background-color: #60d3cf;
+    font-size: 1em;
+    width: calc(100% - 46px);
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    padding-left: 10px;
+    transform: translateY(-2.5px);
 }
 
-div#senha{
-
+#iuser:focus-within, #isenha:focus-within{
+    background-color: white;
 }
 
 div#botoes{
@@ -98,6 +104,15 @@ div#botoes{
     background-color: #49a09d;
     color: white;
     border: none;
+    cursor: pointer;
+}
+
+#btn-entrada:hover{
+    background-color: #326d6b;
+}
+
+#btn-entrada:active{
+    opacity: 0.8;
 }
 
 #btn-esqueciSenha{
@@ -107,12 +122,35 @@ div#botoes{
     border: 1px solid #49a09d;
 }
 
+#btn-esqueciSenha:hover{
+    background-color: #60d3cf;
+}
+
+#btn-esqueciSenha:active{
+    opacity: 0.8;
+}
+
 /* Classe */
 
+.campo{
+    background-color: #5f2c82;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+    display: block;
+    border: 2px solid #5f2c82;
+}
+
+.icon{
+    color: white;
+    font-size: 2em;
+    width: 41px;
+    height: 2px;
+    padding: 5px;
+}
+
 .btn{
-    margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 5px;
     padding: 10px;
-
 }
