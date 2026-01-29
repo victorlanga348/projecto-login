@@ -80,6 +80,9 @@ div#botoes{
 }
 
 #btn-esqueciSenha{
+    text-align: center;
+    text-decoration: none;
+    color: black;
     border: 1px solid #49a09d;
 }
 
