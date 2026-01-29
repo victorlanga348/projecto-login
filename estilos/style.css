@@ -32,10 +32,7 @@ main{
 a{
     display: flex;
     justify-content: center;
-}
-
-a > p{
-    font-size: 1em;
+    align-items: center;
 }
 
 /* Configuracoes especificas*/
