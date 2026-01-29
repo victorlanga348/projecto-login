@@ -5,19 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
 <body>
     <main>
         <section id="login">
-            <div id="imagem">
-                Foto
-            </div>
+            <div id="imagem"></div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça o login para acessar a sua conta e poder fazer as comfiguraçoes no seu ambiente</p>
 
                 <form action="login.js" method="post">
-
+                    <div id="userBTN">
+                        <label for="iuser">Usuario: </label>
+                        <input type="email" name="user" id="iuser" class="btn">
+                    </div>
+                    <div>
+                        <label for="isenha">Senha: </label>
+                        <input type="password" name="senha" id="isenha" class="btn">
+                    </div>
+                    <div id="botoes">
+                        <input type="submit" value="Entrar" id="btn-entrada" class="btn">
+                        <button id="btn-esqueciSenha" class="btn">Esqueci a senha</button>
+                    </div>
                 </form>
             </div>
         </section>
